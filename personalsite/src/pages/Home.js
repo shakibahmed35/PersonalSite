@@ -16,10 +16,10 @@ const Home = () => {
         <h1 className="title">Welcome to My Shakib Ahmed's Site Home Page</h1>
         <div className='button-container'>
             <Link to="/projects">
-                <button>Projects</button>
+                <button className='button-home'>Projects</button>
             </Link>
             <Link to="/resume">
-                <button>Resume</button>
+                <button className='button-home'>Resume</button>
             </Link>
         </div>
         </div>

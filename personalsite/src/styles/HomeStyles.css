@@ -19,8 +19,8 @@
     gap: 1rem;
   }
   
-  .button {
-    background-color: #4CAF50; /* Green button background */
+  .button-home {
+    background-color: #393eba; /* Green button background */
     color: #fff; /* White button text color */
     padding: 20px 40px; /* Larger padding */
     border: none;
@@ -36,4 +36,5 @@
   .button:hover {
     background-color: #45a049; /* Darker green on hover */
   }
+  
   
