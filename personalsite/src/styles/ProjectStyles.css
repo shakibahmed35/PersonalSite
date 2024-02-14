@@ -1,16 +1,21 @@
 /* ProjectsPageStyles.css */
+.projects-page-container {
+  background-color: rgba(45, 50, 50, 0.193);
+  min-height: 100vh;
+}
+
 .projects-page {
-    padding: 20px;
-  }
+    padding: 30px;
+}
   
-  .projects-page-title {
+.projects-page-title {
     font-size: 2rem;
     margin-bottom: 20px;
   }
-  
-  .project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
-  }
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
   
