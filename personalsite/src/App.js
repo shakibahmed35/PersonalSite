@@ -1,12 +1,22 @@
 // App.js
-import React from 'react';
-import AppRouter from './AppRouter';
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+const Home = lazy(() => import('./pages/Home'));
+const Projects = lazy(() => import('./pages/Projects'));
+const Resume = lazy(() => import('./pages/Resume'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 const App = () => {
   return (
-      <div>
-        <AppRouter />
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/Resume' element={<Resume />} />
+          <Route path='*' element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
   );
 };
 
