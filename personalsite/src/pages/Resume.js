@@ -14,6 +14,7 @@ import degrees from '../data/resume/degrees';
 import work from '../data/resume/work';
 import { skills, categories } from '../data/resume/skills';
 
+// NOTE: sections are displayed in order defined.
 const sections = {
   Education: () => <Education data={degrees} />,
   Experience: () => <Experience data={work} />,
@@ -22,29 +23,28 @@ const sections = {
   References: () => <References />,
 };
 
-const Resume = () => {
-  return (
-    <Main 
-      title='Resume'
-      description="Shakib's Resume"
-    >
-      <article className='title'>
-        <header>
-          <h2><Link to='resume'></Link></h2>
-          <div className='link-container'>
+const Resume = () => (
+  <Main
+    title="Resume"
+    description="Shakib's Resume. Detailing courses, job history, and skills"
+  >
+    <article className="post" id="resume">
+      <header>
+        <div className="title">
+          <h2><Link to="resume">Resume</Link></h2>
+          <div className="link-container">
             {Object.keys(sections).map((sec) => (
               <h4 key={sec}>
                 <a href={`#${sec.toLowerCase()}`}>{sec}</a>
-              </h4>
-            ))}
+              </h4>))}
           </div>
-        </header>
-        {Object.entries(sections).map(([name, Section]) => (
-          <Section key={name} />
-        ))}
-      </article>
-    </Main>
-  );
-};
+        </div>
+      </header>
+      {Object.entries(sections).map(([name, Section]) => (
+        <Section key={name} />
+      ))}
+    </article>
+  </Main>
+);
 
 export default Resume;
