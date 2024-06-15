@@ -1,25 +1,49 @@
-// HomePage.js
 import React from 'react';
-import Header from '../components/Header';
-import '../styles/HomeStyles.css';
-import '../styles/HeaderStyles.css';
+import { Link } from 'react-router-dom';
 
+import Main from '../layouts/Main';
+
+import Education from '../components/resume/Education';
+import Experience from '../components/resume/Experience';
+import Skills from '../components/resume/Skills';
+import Courses from '../components/resume/Courses';
+import References from '../components/resume/References';
+
+import courses from '../data/resume/courses';
+import degrees from '../data/resume/degrees';
+import work from '../data/resume/work';
+import { skills, categories } from '../data/resume/skills';
+
+const sections = {
+  Education: () => <Education data={degrees} />,
+  Experience: () => <Experience data={work} />,
+  Skills: () => <Skills skills={skills} categories={categories} />,
+  Courses: () => <Courses data={courses} />,
+  References: () => <References />,
+};
 
 const Resume = () => {
-  const handleButtonClick = (page) => {
-    // Handle button click
-    console.log(`Navigating to ${page}`);
-  };
-
   return (
-    <div>
-        <div className='header'>
-            <Header />
-        </div>
-        <div className="home-page-container">
-            <h1 className="title">Welcome to My Shakib Ahmed's Site Resume Page</h1>
-        </div>
-    </div>
+    <Main 
+      title='Resume'
+      description="Shakib's Resume"
+    >
+      <article className='title'>
+        <header>
+          <h2><Link to='resume'></Link></h2>
+          <div className='link-container'>
+            {Object.keys(sections).map((sec) => (
+              <h4 key={sec}>
+                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
+              </h4>
+            ))}
+          </div>
+        </header>
+        {Object.entries(sections).map(([name, Section]) => (
+          <Section key={name} />
+        ))}
+      </article>
+    </Main>
   );
 };
 

@@ -2,8 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types'
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-import '../static/css/main.scss'
-
 import Analytics from '../components/templates/Analytics';
 import Navigation from '../components/templates/Navigation';
 import SideBar from '../components/templates/SideBar';

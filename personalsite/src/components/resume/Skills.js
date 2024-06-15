@@ -15,7 +15,7 @@ const Skills = ({ skills, categories }) => {
             [key]: (label === key) && !buttons[key],
         }), {});
 
-        newButtons.All = !Object.keys(button).some((key) => newButtons[key]);
+        newButtons.All = !Object.keys(buttons).some((key) => newButtons[key]);
         setButtons(newButtons);
     }
 

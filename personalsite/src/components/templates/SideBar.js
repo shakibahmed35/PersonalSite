@@ -22,7 +22,7 @@ const SideBar = () => {
                 <h2>About</h2>
                 <p>Hi, I&apos;m Shakib. I am a <a href='https://degrees.apps.asu.edu/masters-phd/major/ASU00/ESCOMSCMS/computer-science-ms'>
                     Arizona State </a> graduate. I have both my Bachelors and Masters in Computer Science. I am passionate about data science
-                    and software development. On top of that, I have worked as a developer at <a href='https://privoro.com/'>Privoro</a>
+                    and software development. On top of that, I have worked as a developer at <a href='https://privoro.com/'>Privoro </a>
                     and <a href='https://www.schwab.com/'>Charles Schwab</a>
                 </p>
                 <ul className='actions'>
