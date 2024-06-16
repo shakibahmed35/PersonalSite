@@ -23,10 +23,9 @@ const work = [
         startDate: '2021-05-01',
         endDate: '2022-05-01',
         summary: `Privoro addresses the modern necessity of carrying smartphones, which, despite their convenience, 
-        pose significant risks of tracking and hacking, threatening the security of our personal information. 
-        The company is at the forefront of developing independent mobile protection solutions that safeguard users' 
-        privacy and security without relying on the phone itself. Privoro's innovations ensure that individuals can 
-        stay connected in today's ultra-connected world without compromising their safety or privacy.`,
+        pose significant risks of tracking and hacking, threatening the security of users' personal information. 
+        The company focuses on developing independent mobile protection solutions that safeguard users' 
+        privacy and security without relying on the phone itself.`,
         highlights: [
             'Developed a Leaflet map using the HERE API and React to display active devices based on queried addresses',
             'Hosted a Kubernetes environment to host and test applications aiding the companies future developments',

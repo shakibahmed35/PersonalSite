@@ -59,9 +59,6 @@ const Skills = ({ skills, categories }) => {
             <div className='link-to' id='skills' />
             <div className='title'>
                 <h3>Skills</h3>
-                <p>This is a section I have seen on some example personal websites, so
-                    I thought that I would add one myself. Plus, it is cool visual
-                </p>
             </div>
             <div className='skill-button-container'>
                 {getButtons()}
