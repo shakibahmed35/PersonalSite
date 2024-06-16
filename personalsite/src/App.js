@@ -1,11 +1,9 @@
 // App.js
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Main from './layouts/Main'
 import './static/css/main.scss'
-
-const { PUBLIC_URL } = process.env;
 
 const Projects = lazy(() => import('./pages/Projects'));
 const Resume = lazy(() => import('./pages/Resume'));
@@ -16,7 +14,7 @@ const About = lazy(() => import('./pages/About'));
 
 const App = () => {
   return (
-      <BrowserRouter basename={PUBLIC_URL}>
+      <Router>
         <Suspense fallback={<Main />}>
           <Routes>
             <Route path='/' element={<Index />} />
@@ -27,7 +25,7 @@ const App = () => {
             <Route path='*' element={<NotFound />} />
           </Routes>
           </Suspense>
-      </BrowserRouter>
+      </Router>
   );
 };
 
