@@ -22,7 +22,7 @@ const Projects = () => {
                 {data.map((project) => (
                     <Cell
                         data={project}
-                        key={project.key}
+                        key={project.title}
                     />
                 ))}
             </article>
