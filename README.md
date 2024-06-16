@@ -42,5 +42,6 @@ If you have any questions or feedback, feel free to reach out to me at:
 - Email: shakibahmed4352@gmail.com
 - LinkedIn: [Shakib Ahmed](https://www.linkedin.com/in/shakib-ahmed-00/)
 
-#### This website's styling was heavily inspired by Michael D'Angelo.
-#### MICHAEL@MLDANGELO.COM
+## Attribution
+This website's styling was heavily inspired by Michael D'Angelo.
+MICHAEL@MLDANGELO.COM
