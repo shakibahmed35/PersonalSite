@@ -35,7 +35,7 @@ const Resume = () => (
           <div className="link-container">
             {Object.keys(sections).map((sec) => (
               <h4 key={sec}>
-                <a href={`#${sec.toLowerCase()}`}>{sec}</a>
+                <a href={`#/resume#${sec.toLowerCase()}`}>{sec}</a>
               </h4>))}
           </div>
         </div>

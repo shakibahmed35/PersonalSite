@@ -13,7 +13,7 @@ const data = [
     {
         title: 'Music Matcher',
         subtitle: 'An Academic Project',
-        image: './images/projects/musicmatcher.jpeg',
+        image: '/images/projects/musicmatcher.jpeg',
         link: 'https://youtu.be/eJ3bmfE8unM',
         date: '2022-05-01',
         desc:
@@ -25,7 +25,7 @@ const data = [
     {
         title: 'Basketball Predictions Model',
         subtitle: 'An Academic Project',
-        image: './images/projects/basketball.jpeg',
+        image: '/images/projects/basketball.jpeg',
         link: 'https://drive.google.com/file/d/14c8bIL8RJd6zFX0zxRWUZ2E8Lmom-ciS/view?usp=sharing',
         date: '2021-12-10',
         desc:
@@ -39,7 +39,7 @@ const data = [
     {
         title: 'control-alt-delete',
         subtitle: 'Opportunity Hackathon',
-        image: './images/projects/cntlAltDel.jpeg',
+        image: '/images/projects/cntlAltDel.jpeg',
         date: '2019-10-01',
         desc:
             'Control-Alt-Delete is a non-profit in AZ that aims to aid '
@@ -52,7 +52,7 @@ const data = [
     {
         title: 'Bluetooh Bike Device',
         subtitle: 'Sundevil Hackathon',
-        image: './images/projects/nkk.jpeg',
+        image: '/images/projects/nkk.jpeg',
         link: 'https://www.nkkswitches.com/nkk-smartdisplay-featured-engineering-design-challenge-arizona-state-university/',
         date: '2018-10-03',
         desc:
