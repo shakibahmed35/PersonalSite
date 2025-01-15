@@ -1,5 +1,17 @@
 const data = [
     {
+        title: 'Set List Generator',
+        subtitle: 'A Personal Project',
+        image: '/images/projects/setlist.jpeg',
+        link: 'https://github.com/shakibahmed35/SetListGenerator',
+        date: '2025-01-14',
+        desc:
+            'Built as an app to make going to concerts easier. '
+            + 'It takes a setlist.fm link and '
+            + 'will interface with the spotipy api to create a  '
+            + 'playlist in your spotify account',
+    },
+    {
         title: 'This Website',
         subtitle: 'A personal website',
         image: '/images/projects/personalSite.jpeg',
